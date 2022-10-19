@@ -1,7 +1,5 @@
 package linkedlist;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
 
 public class LinkedList {
 	
@@ -27,5 +25,17 @@ public class LinkedList {
 			System.out.println(node.data);
 			node = node.next;
 		}
+	}
+	
+	public void isInList(int data) {
+		Node node = head;
+		boolean isInList = false;
+		while(node != null) {
+			if(node.data == data) {
+				isInList = true;
+			}
+			node = node.next;
+		}
+		System.out.println(isInList);
 	}
 }

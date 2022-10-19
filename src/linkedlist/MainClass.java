@@ -8,5 +8,6 @@ public class MainClass {
 		linkedList.insert(6);
 		linkedList.insert(7);
 		linkedList.display();
+		linkedList.isInList(9);
 	}
 }
